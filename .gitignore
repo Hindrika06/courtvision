@@ -1,0 +1,50 @@
+# Python / Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Configuration & secrets
+.env
+.env.*
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Media files & large datasets
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+*.weights
+*.bin
+*.engine
+
+# Input and output directory contents
+/input/*
+!/input/.gitkeep
+/output/*
+!/output/.gitkeep
+/models/*
+!/models/.gitkeep
+/ads/*
+!/ads/.gitkeep
