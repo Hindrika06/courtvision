@@ -1,0 +1,12 @@
+{
+    "cameras": [
+        {
+            "name": "Court Camera 1 (RTSP)",
+            "type": "rtsp",
+            "url": "rtsp://192.168.1.100:554/stream1",
+            "enabled": true,
+            "reconnect": true,
+            "reconnect_delay": 3
+        }
+    ]
+}

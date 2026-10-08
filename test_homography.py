@@ -7,7 +7,13 @@ import numpy as np
 from vision.homography import (build_homography, court_to_image, load_court,
                                rect_to_quad, COURT_W, COURT_L)
 
-VIDEO = sys.argv[1] if len(sys.argv) > 1 else "input/input.mp4"
+VIDEO = "input/input.mp4"
+NO_DISPLAY = False
+for arg in sys.argv[1:]:
+    if arg == "--no-display":
+        NO_DISPLAY = True
+    elif not arg.startswith("--"):
+        VIDEO = arg
 
 # Test rectangles in court metres: (name, x0, y0, x1, y1, BGR colour)
 TEST_RECTS = [
@@ -54,15 +60,16 @@ ok, frame = cap.read()
 cv2.imwrite("output/step3_test.jpg", draw(frame))
 print("Saved output/step3_test.jpg")
 
-cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-while True:
-    ok, frame = cap.read()
-    if not ok:
-        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)  # loop the video
-        continue
-    cv2.imshow("Step 3 - test rectangles (q to quit)", draw(frame))
-    if cv2.waitKey(33) & 0xFF == ord("q"):
-        break
+if not NO_DISPLAY:
+    cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+    while True:
+        ok, frame = cap.read()
+        if not ok:
+            cap.set(cv2.CAP_PROP_POS_FRAMES, 0)  # loop the video
+            continue
+        cv2.imshow("Step 3 - test rectangles (q to quit)", draw(frame))
+        if cv2.waitKey(33) & 0xFF == ord("q"):
+            break
 
 cap.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows()

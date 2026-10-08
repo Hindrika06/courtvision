@@ -1,0 +1,10 @@
+{
+    "active_profile": "court_1",
+    "profiles": [
+        {
+            "id": "court_1",
+            "name": "Court 1",
+            "path": "config/profiles/court_1"
+        }
+    ]
+}

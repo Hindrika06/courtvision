@@ -1,0 +1,22 @@
+{
+    "ads": [
+        {
+            "name": "left_baseline",
+            "image": "ads/ad1.png",
+            "x0": 1.2,
+            "y0": 14.5,
+            "x1": 4.4,
+            "y1": 21.0,
+            "opacity": 1.0
+        },
+        {
+            "name": "right_baseline",
+            "image": "ads/ad2.png",
+            "x0": 6.57,
+            "y0": 14.5,
+            "x1": 9.77,
+            "y1": 21.0,
+            "opacity": 1.0
+        }
+    ]
+}

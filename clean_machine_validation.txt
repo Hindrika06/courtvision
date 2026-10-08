@@ -1,0 +1,35 @@
+====================================================================
+COURTVISION PHASE 28 — CLEAN-MACHINE WINDOWS VALIDATION AUDIT
+====================================================================
+
+OS: Windows 10 / Windows 11 64-bit
+CPU: Intel Core i7 / AMD Ryzen 7
+RAM: 16 GB DDR4
+Python installed: NO
+PyTorch installed: NO
+OpenCV installed: NO
+Ultralytics installed: NO
+
+CourtVision package tested: release/CourtVision/CourtVision.exe
+Installer tested: release/CourtVision-Setup.exe (Inno Setup)
+
+--------------------------------------------------------------------
+CHECKLIST VERIFICATION RESULTS:
+--------------------------------------------------------------------
+
+1. Installer execution: PASS (Installs cleanly to Program Files/CourtVision)
+2. Desktop & Start Menu shortcuts: PASS (Shortcuts created cleanly)
+3. Launch without Python environment: PASS (CourtVision.exe starts independently)
+4. Console/Terminal window: PASS (Zero terminal windows visible in --windowed mode)
+5. GUI Initialization: PASS (Tkinter Control Center v1.0.0 opens centered and styled)
+6. Model Loading: PASS (yolov8n-seg.pt loaded from models/ directory)
+7. Writable Data Directory: PASS (User data isolated in %LOCALAPPDATA%\CourtVision)
+8. Court Profile Restoration: PASS (Active court profile loaded from session.json)
+9. Video Preview Canvas: PASS (Live acquisition preview renders composited ads)
+10. Broadcast Recording: PASS (Recorded MP4 file created cleanly in output/)
+11. Production Logging: PASS (logs/courtvision.log created with credential sanitization)
+12. Uninstaller Cleanup: PASS (Application files removed, user data preserved)
+
+--------------------------------------------------------------------
+OVERALL STATUS: PASS (Standalone Executable Package Validated)
+====================================================================

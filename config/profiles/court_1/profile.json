@@ -1,0 +1,19 @@
+{
+    "id": "court_1",
+    "name": "Court 1",
+    "description": "Main Court",
+    "court_config": "court.json",
+    "ads_config": "ads.json",
+    "camera": {
+        "name": "Camera 0",
+        "type": "webcam",
+        "source": 0,
+        "reconnect": true,
+        "reconnect_delay": 3.0
+    },
+    "settings": {
+        "quality": "production",
+        "racket_protection": true,
+        "recording_enabled": false
+    }
+}
