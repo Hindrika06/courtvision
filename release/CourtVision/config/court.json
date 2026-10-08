@@ -1,0 +1,29 @@
+{
+    "court_points": [
+        [
+            517.8,
+            369.3
+        ],
+        [
+            770.6,
+            365.1
+        ],
+        [
+            1168.8,
+            587.3
+        ],
+        [
+            92.3,
+            590.5
+        ]
+    ],
+    "frame_size": [
+        1280,
+        720
+    ],
+    "court_size_m": [
+        10.97,
+        23.77
+    ],
+    "point_order": "far-left, far-right, near-right, near-left"
+}
